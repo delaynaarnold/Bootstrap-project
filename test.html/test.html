@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <script src="./js.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <div class="top-line"></div>
+    <section class="container row nav">
+        <a href="#" class="logo">Meow.<span style="color:#E75480">Lounge</span></a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="navigation row">
+            <ul class="primary-link row">
+                <li><a href="#" class="active-btn">The Lounge</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Adopt</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Plan a Visit</a>
+                </li>
+            </ul>
+            <ul class="secondary-link row">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </li>
+               
+            </ul>
+        </nav>
+    </section>
+
+    <section class="hero-body row">
+        <div class="content row">
+            <div>
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn">
+                    <i class="fas fa-cat"></i>
+                    Current Lounge Cats!
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>							
+						
+<script>
+    function toggleMenu(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const navigation = document.querySelector('.navigation');
+    toggleMenu.classList.toggle('active');
+    navigation.classList.toggle('active');
+}							
+
+						
+</script>
