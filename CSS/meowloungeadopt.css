@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Oooh Baby', cursive;
     font-weight: 500;
     margin: 0;
     background-color: #e5e5e5;
@@ -109,7 +109,7 @@ a {
 }
 
 .hero-body {
-    background: linear-gradient(270deg, #3b7a6f 2%, rgba(66, 184, 131, 0) 90%), url(https://images.unsplash.com/photo-1586289883499-f11d28aaf52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+    background: linear-gradient(270deg, #3b7a6f 2%, rgba(66, 184, 131, 0) 90%), url(https://images.pexels.com/photos/5821027/pexels-photo-5821027.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -130,12 +130,12 @@ a {
 
 .hero-body h1 {
     color: #fff;
-    font-size: clamp(60px, 4vw, 91px);
+    font-size: clamp(70px, 4vw, 91px);
     margin: 0;
 }
 
 .hero-body p {
-    color: #fff;
+    color: rgb(27, 26, 27);
     font-size: clamp(30px, 4vw, 48px);
     margin-top: 0;
 }
@@ -225,10 +225,71 @@ a:hover {
     }
 }
 
-@media screen and (max-width:800px) {
+@media all and (max-width:800px) {
     .content {
         max-width: 100%;
     }
-    
+ 
+    /* Adoption Page */
 }							
 
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* this allows the cards to stack on each other in a smaller viewport */
+}
+
+.card {
+    background: white;
+    width: 220px;
+    margin: 20px;
+    border-radius: 15px;
+    font-family: sans-serif,;
+    
+}
+
+.card-image {
+  
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.adopt-1 {
+    background-image: url("https://images.pexels.com/photos/7716390/pexels-photo-7716390.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+.adopt-2 {
+    background-image: url(https://images.pexels.com/photos/6001209/pexels-photo-6001209.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+}
+
+.adopt-3 {
+    background-image: url(https://images.pexels.com/photos/979503/pexels-photo-979503.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card:hover {
+    color:rgb(126, 35, 118);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
