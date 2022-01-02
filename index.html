@@ -9,7 +9,7 @@
         integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <script src="./js.js" type="text/javascript"></script>
+    <script src="JS/meowcafe.js" type="text/javascript"></script>
     <link rel="stylesheet" href="CSS/meowlounge1.css">
 </head>
 <body>
@@ -22,11 +22,17 @@
                 <li><a href="#" class="active-btn">The Lounge</a></li>
                 <li><a href="adopt.html">Adopt</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="visit.html">Plan a Visit</a>
-                </li>
+                <li><a href="visit.html">Plan a Visit</a> </li>
+                <li><a id="hello" class="button">Login</a></li>
+               
+                
             </ul>
+            
+        
         </nav>
     </section>
+   
+    
     <section class="hero-body row">
         <div class="content row">
             <div>
@@ -45,10 +51,7 @@
             <img src="images/miki004.jpg" height="300"><img src="images/silver003.jpg" height="300"><img src="images/tiki001.jpg" height="300">
         </div>
     </div>
-    ​
-    ​
-    ​
-    ​
+
         <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -70,16 +73,27 @@
                 <i class=" fblogin fa fa-facebook fa-fw"></i> Login with Facebook
               </a>
          </div>
-            <div class="col login">
-            <h2 class="headerlogin"> Log into your account<br>with Meow lounge!</h2>
-     <input class="username" type="text" name="username" placeholder="Username" required>
-      <input class="password"type="password" name="password" placeholder="Password" required>
-     <input class="submit"type="submit" value="Login">
-            </div>
+           
       
           </div>
         </form>
         </div>
+
+      <!--Modal-->
+      <div class="bg-modal">
+        <div class="modal-contents">
+    
+            <div class="close">+</div>
+            <img class="modal-image" src="https://images.pexels.com/photos/982865/pexels-photo-982865.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" height="200px" alt="">
+    
+            <form action="">
+                <input class= "email" type="text" placeholder="Name">
+                <input type="email" placeholder="E-Mail">
+                <a href="#" class="btn btn-primary-sm modal-submit">Submit</a>
+            </form>
+    
+        </div>
+    </div>
 <!-- space-->
     <footer>
         <p class="text">Subscribe to our newsletter to keep up with our kitties!</p>
@@ -101,13 +115,25 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
     </footer>
+    <script>
+        function toggleMenu(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }                          
+    </script>
+   <script>
+
+document.getElementById('hello').addEventListener('click', 
+function() {
+	document.querySelector('.bg-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', 
+function() {
+	document.querySelector('.bg-modal').style.display = 'none';
+});
+   </script>
 </body>
 </html>                        
-<script>
-    function toggleMenu(){
-    const toggleMenu = document.querySelector('.toggleMenu');
-    const navigation = document.querySelector('.navigation');
-    toggleMenu.classList.toggle('active');
-    navigation.classList.toggle('active');
-}                          
-</script>
