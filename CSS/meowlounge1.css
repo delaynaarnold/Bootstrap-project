@@ -533,14 +533,21 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
 	border-radius: 15px;
 }
 
-input {
-	margin: 15px auto;
+.emailinput {
+    margin: 15px auto;
 	display: block;
 	width: 50%;
 	padding: 20px;
 	border: 1px solid gray;
     border-radius: 5px;
-   
+}
+.nameinput {
+    margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 20px;
+	border: 1px solid gray;
+    border-radius: 5px;
 }
 
 .email {
