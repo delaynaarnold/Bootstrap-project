@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Oooh Baby', cursive;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
     font-weight: 500;
     margin: 0;
     background-color: #e5e5e5;
@@ -108,15 +108,8 @@ a {
     padding: 0.2em 0;
 }
 
-.hero-body {
-    background: linear-gradient(270deg, #3b7a6f 2%, rgba(66, 184, 131, 0) 90%), url(https://images.pexels.com/photos/5821027/pexels-photo-5821027.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    justify-content: flex-end;
-   
-}
+
+
 
 .content {
     max-width: 50%;
@@ -246,7 +239,7 @@ a:hover {
     width: 220px;
     margin: 20px;
     border-radius: 15px;
-    font-family: sans-serif,;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     
 }
 
@@ -258,17 +251,6 @@ a:hover {
     border-radius: 15px 15px 0 0;
 }
 
-.adopt-1 {
-    background-image: url("https://images.pexels.com/photos/7716390/pexels-photo-7716390.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-}
-
-.adopt-2 {
-    background-image: url(https://images.pexels.com/photos/6001209/pexels-photo-6001209.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-}
-
-.adopt-3 {
-    background-image: url(https://images.pexels.com/photos/979503/pexels-photo-979503.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-}
 .adopt-ralph {
     background-image: url(https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
@@ -342,6 +324,7 @@ top: 5px;
     top: 15px
 }
 
+/* FOOTER */
 
 *{
     box-sizing: border-box;
@@ -349,7 +332,7 @@ top: 5px;
     padding: 0;
 }
 body {
-    font-family: "Montserrat";
+    font-family: 'oooh Baby', cursive, sans-serif;
 }
 :root {
     --mycolor: rgb(255,0,140)
@@ -457,6 +440,7 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
         font-size: 10px;
     }
 }
+/*END OF FOOTER*/
 
 .cat-video {
     border: black;
@@ -468,4 +452,56 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
 .card-group {
     align-items: center;
     flex-direction: column;
+}
+
+
+.adoptable-cats {
+    margin-top: 50px;
+   margin-bottom: 50px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.adoptable-cats h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    
+}
+.adoptable-cats p {
+    text-align: center;
+    
+}
+
+hr {
+    border-color: #42b883;
+}
+
+.otis {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+.miley {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+.snowflake {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+.crabcake {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+.success-stories {
+    background-color: rgb(190, 111, 167);
+}
+
+.snowflake-sect {
+    background-color: rgb(190, 111, 167);
 }

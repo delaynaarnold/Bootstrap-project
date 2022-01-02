@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "oooh Baby", cursive, 'DM Sans', sans-serif;
+    font-family: 'raleway',sans-serif;
     font-weight: 500;
     margin: 0;
     background-color: #e5e5e5;
@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -43,7 +43,8 @@ nav ul {
     padding: 0;
     list-style: none;
     align-items: center;
-    gap: 2em;
+    gap: 2em; 
+    font-family: 'raleway', sans-serif;
 }
 
 ul li {
@@ -64,6 +65,7 @@ a {
     font-weight: 700;
     color: #5e3555;
     font-size: 36px;
+    font-family: 'oooh Baby', cursive;
 }
 
 .primary-link {
@@ -119,7 +121,7 @@ a {
 }
 
 .content {
-    max-width: 50%;
+    max-width: 40%;
     align-items: center;
     /* flex-wrap: wrap; */
 }
@@ -129,31 +131,36 @@ a {
 }
 
 .hero-body h1 {
-    color: #fff;
+    color: pink;
     font-size: clamp(70px, 4vw, 91px);
     margin: 0;
+    font-family: 'raleway',sans-serif;
 }
 
 .hero-body p {
-    color: #fff;
+    color: black;
     font-size: clamp(30px, 4vw, 48px);
-    margin-top: 0;
+    margin-top: 30px;
+    font-family: raleway, sans-serif;
 }
 
 .btn {
-    color: #35495e;
+    color: white;
     font-size: 26px;
-    background-color: #fff;
+    background-color: hotpink;
     padding: 0.7em 1em;
     border-radius: 70px;
     -webkit-border-radius: 70px;
     -moz-border-radius: 70px;
     -ms-border-radius: 70px;
     -o-border-radius: 70px;
+    font-family: 'raleway',sans-serif;
+    margin-top: 50px;
 }
 
 a:hover {
     opacity: 0.7;
+    color: rgb(167, 43, 105);
 }
 
 @media screen and (max-width:1200px) {
@@ -293,7 +300,7 @@ a:hover {
     padding: 0;
 }
 body {
-    font-family: "Montserrat";
+    font-family: 'raleway', sans-serif;
 }
 :root {
     --mycolor: rgb(255,0,140)
@@ -401,3 +408,102 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
         font-size: 10px;
     }
 }
+
+/*BODY*/
+
+
+.container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+  
+  img {
+      margin-top: 50px;
+      margin-left: 20px;
+      box-shadow: hotpink 0px 19px 38px, hotpink 0px 15px 12px;
+      border-radius: 15%;
+      animation: mymove 5s infinite;
+      flex-wrap: wrap;
+      align-items: center;
+     
+  }
+
+  .ferret h1{
+      position: relative;
+      margin-left: 50px;
+  }
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+ 
+
+  /*facebook submit button */
+
+  .h2, .username {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+    margin-top: 50px;
+  }
+  .h2, .password {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+  }
+  .h2, .submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    text-decoration: none; 
+  }
+  .fb, fblogin {
+    width: 150%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+    text-decoration: none;   
+    
+  }
